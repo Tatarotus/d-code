@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700&display=swap");
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("https://tinyurl.com/qkvvhu3");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-height: 1500px;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      color: #fff;
+      font-size: 2rem;
+      width: 100px;
+      border-bottom: 7px solid #4a9f55;
+      margin-bottom: 3rem;
+      padding-bottom: 10px;
+    }
+    .user,
+    .passwd {
+      display: flex;
+      width: 100%;
+      border-bottom: 3px solid #4a9f55;
+      align-items: center;
+      margin-bottom: 1rem;
+      input {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: #fff;
+        background: transparent;
+        margin-left: 10px;
+        align-self: flex-end;
+        border: none;
+        padding: 10px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    button {
+      margin-top: 2rem;
+      font-size: 1rem;
+      padding: 10px 0;
+      color: #fff;
+      background: transparent;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      border: 3px solid #4a9f55;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          transparent;
+      }
+    }
+  }
+}
+
+/* quick fix for autocomplete */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
