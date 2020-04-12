@@ -1,0 +1,57 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  background: #1a191b;
+  padding: 3rem 5rem;
+  padding-bottom: 5rem;
+  .login {
+    h1 {
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      input {
+        transition: width 0.2s;
+        transition-timing-function: ease-in;
+        &:hover {
+          width: 120%;
+          border: 3px solid #379b71;
+        }
+      }
+      input,
+      button {
+        width: 100%;
+        align-self: center;
+        color: #fff;
+        background: #1a191b;
+        flex: 1;
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        border: 3px solid #2a689b;
+        border-radius: 30px;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        &:focus {
+          outline: 0;
+        }
+      }
+      button {
+        border: 3px solid #379b71;
+        color: #fff;
+        width: 50%;
+        align-self: center;
+        &:hover {
+          background: #379b71;
+        }
+      }
+
+      text-align: center;
+    }
+  }
+}
